@@ -45,9 +45,9 @@ include "./views/templates/filtros.php";
         <?php 
         
         echo crearSeguimiento($seguimiento);
-        $items = [[1,"Kit Escalada Petzl Corax 2018","109,95 €","./img/arneses/Kit%20Escalada%20Petzl%20Corax%202018.jpg"],
-        [1,"Arnes de Escalada Mammut OPHIR 3 ","69,90 €","./img/arneses/Arnes%20de%20Escalada%20Mammut%20OPHIR%203.jpg"],
-        [1,"Arnes Rock Empire 4B Slight","79,95 €","./img/arneses/Arnes%20Rock%20Empire%204B%20Slight.jpg"]];
+        $items = [[1,"Kit Escalada Petzl Corax 2018","109,95 €","./img/arneses/Kit%20Escalada%20Petzl%20Corax%202018.jpg","80,95 €"],
+        [1,"Arnes de Escalada Mammut OPHIR 3 ","69,90 €","./img/arneses/Arnes%20de%20Escalada%20Mammut%20OPHIR%203.jpg","50,95 €"],
+        [1,"Arnes Rock Empire 4B Slight","79,95 €","./img/arneses/Arnes%20Rock%20Empire%204B%20Slight.jpg","60  ,95 €"]];
                 echo crearItems($items); ?>
 
 

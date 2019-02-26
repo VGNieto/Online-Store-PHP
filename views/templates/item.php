@@ -1,6 +1,7 @@
 <?php
 
 function crearItems($items){
+    
     $resultados = "";
     foreach ($items as $item) {
 
@@ -15,9 +16,15 @@ function crearItems($items){
 
                                     <div class='card-content'>
                                         <p> $item[1] </p>
-                                        <hr>
-                                        <p> $item[2] </p>
-                                    </div>
+                                        <hr>";
+                                        if(isset($_SESSION['userID'])){
+                                            $resultados.= 
+                                            "<p style='text-decoration: line-through'> P.V.P: $item[2] </p>
+                                            <p> P.V.P Cliente: $item[4] </p>";
+                                            } else{
+                                                $resultados.= "<p> P.V.P: $item[2] </p>";
+                                            }
+                                    $resultados.="</div>
                                     <div class='card-action'>
                                         <a href='#'> Añadir al carrito </a>
                                     </div>
