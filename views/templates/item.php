@@ -1,0 +1,33 @@
+<?php
+
+function crearItems($items){
+    $resultados = "";
+    foreach ($items as $item) {
+
+        $resultados.="
+        <div class='col s12 m12 l4 xl4'>
+                        <div class='row'>
+                            <div class='col s12'>
+                                <div class='card'>
+                                    <div class='card-image materialboxed responsive-image'>
+                                    <img id='imagenItem' class='responsive-image' src=$item[3]>
+                                    </div>
+
+                                    <div class='card-content'>
+                                        <p> $item[1] </p>
+                                        <hr>
+                                        <p> $item[2] </p>
+                                    </div>
+                                    <div class='card-action'>
+                                        <a href='#'> Añadir al carrito </a>
+                                    </div>
+                                    </div>
+                    </div>
+                  </div>
+             </div>";
+    }
+
+
+
+    return $resultados;
+}
